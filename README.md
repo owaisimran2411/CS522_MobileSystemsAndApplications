@@ -1,1 +1,1 @@
-# CS522_WebProgramming
+# CS522_MobileSystemsAndApplications
