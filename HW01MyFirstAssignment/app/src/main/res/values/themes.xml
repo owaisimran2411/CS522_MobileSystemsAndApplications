@@ -1,7 +1,0 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.HW01MyFirstAssignment" parent="android:Theme.Material.Light.DarkActionBar">
-
-        <!-- Customize your theme here. -->
-    </style>
-</resources>
