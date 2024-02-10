@@ -33,11 +33,6 @@ public class ViewPeerActivity extends FragmentActivity implements LoaderManager.
 
     private Peer peer;
 
-    /*
-     * UI for messages sent by this peer
-     */
-    private ListView messageList;
-
     private SimpleCursorAdapter messagesAdapter;
 
     static final private int LOADER_ID = 3;
@@ -66,11 +61,14 @@ public class ViewPeerActivity extends FragmentActivity implements LoaderManager.
 
         // TODO use SimpleCursorAdapter (with flags=0 and null initial cursor) to display the messages received.
         // You can use android.R.simple_list_item_1 as layout for each row.
-        String[] reciever = new String[]{MessageContract.MESSAGE_TEXT};
+        String[] receiver = new String[]{MessageContract.MESSAGE_TEXT};
         int[] sender = new int[]{R.id.message};
 
-        messagesAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_1, null, reciever, sender, 0);
-        messageList = findViewById(R.id.message_list);
+        messagesAdapter = new SimpleCursorAdapter(this, R.layout.message, null, receiver, sender, 0);
+        /*
+         * UI for messages sent by this peer
+         */
+        ListView messageList = findViewById(R.id.message_list);
         messageList.setAdapter(messagesAdapter);
 
         // done TODO
