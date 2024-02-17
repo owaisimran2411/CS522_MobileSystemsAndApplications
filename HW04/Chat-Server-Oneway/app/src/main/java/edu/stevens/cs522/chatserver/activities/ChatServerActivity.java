@@ -247,8 +247,8 @@ public class ChatServerActivity extends FragmentActivity implements OnClickListe
             /*
 			 * TODO upsert peer and insert message into the database
 			 */
-            messageDao.persist(message);
             peerDao.upsert(peer);
+            messageDao.persist(message);
 
             // done TODO
 

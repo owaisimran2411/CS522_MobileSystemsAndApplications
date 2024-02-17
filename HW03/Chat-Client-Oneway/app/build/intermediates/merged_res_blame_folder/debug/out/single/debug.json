@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "edu.stevens.cs522.chatclient.app-merged_res-5:/layout_chat_client.xml.flat",
+        "source": "edu.stevens.cs522.chatclient.app-main-7:/layout/chat_client.xml"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatclient.app-merged_res-5:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatclient.app-main-7:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatclient.app-merged_res-5:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatclient.app-main-7:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatclient.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatclient.app-main-7:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatclient.app-merged_res-5:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatclient.app-main-7:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatclient.app-merged_res-5:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatclient.app-main-7:/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

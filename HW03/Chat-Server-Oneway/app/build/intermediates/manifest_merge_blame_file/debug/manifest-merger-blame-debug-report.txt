@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.stevens.cs522.chatserver"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+12
+13
+14    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" -->
+15    <!-- tools:ignore="ScopedStorage" /> -->
+16
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:10:5-67
+17-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:10:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:11:5-79
+18-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.READ_SMS" />
+19-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:9:5-67
+19-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:9:22-64
+20    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+20-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:10:5-70
+20-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:10:22-67
+21    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- Required for receiving MMS -->
+21-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:11:5-67
+21-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:11:22-64
+22    <!-- <uses-permission android:name="android.permission.RECEIVE_MMS" /> -->
+23    <!-- <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" /> -->
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:17:5-68
+24-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:17:22-65
+25
+26    <application
+26-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:13:5-33:19
+27        android:allowBackup="true"
+27-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:20:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.8.0] C:\Users\Shaggy\.gradle\caches\transforms-3\84fe36dc88f4ca8aca4a857b7d60904c\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:14:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:15:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:23:9-54
+34        android:supportsRtl="true"
+34-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:24:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:16:9-40
+37        <activity
+37-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:17:9-23:20
+38            android:name="edu.stevens.cs522.chatserver.activities.ChatServerActivity"
+38-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:17:19-64
+39            android:exported="true" >
+39-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:17:65-88
+40            <intent-filter>
+40-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:18:13-22:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:19:17-69
+41-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:19:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:21:17-77
+43-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:21:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity android:name="edu.stevens.cs522.chatserver.activities.ViewPeersActivity" />
+46-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:24:9-25:59
+46-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:25:13-57
+47        <activity android:name="edu.stevens.cs522.chatserver.activities.ViewPeerActivity" />
+47-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:26:9-27:58
+47-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:27:13-56
+48        <!-- Add a provider element (see BaseContract) -->
+49        <provider
+49-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:29:9-32:39
+50            android:name="edu.stevens.cs522.chatserver.providers.ChatProvider"
+50-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:31:13-51
+51            android:authorities="edu.stevens.cs522.chatserver"
+51-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:30:13-63
+52            android:exported="false" />
+52-->C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Server-Oneway\app\src\main\AndroidManifest.xml:32:13-37
+53
+54        <receiver
+54-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:26:9-38:20
+55            android:name="edu.stevens.cs522.base.sms.ChatMessageReceiver"
+55-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:27:13-74
+56            android:enabled="true"
+56-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:28:13-35
+57            android:exported="true" >
+57-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:29:13-36
+58            <intent-filter>
+58-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:30:13-37:29
+59                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+59-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:31:17-82
+59-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:31:25-79
+60                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+60-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:32:17-81
+60-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:32:25-78
+61
+62                <!-- Required for MMS receiver -->
+63                <!-- <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" /> -->
+64                <!-- <data android:mimeType="application/vnd.wap.mms-message" /> -->
+65            </intent-filter>
+66        </receiver>
+67
+68        <service
+68-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:40:9-43:40
+69            android:name="edu.stevens.cs522.base.work.WorkIntentService"
+69-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:41:13-73
+70            android:enabled="true"
+70-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:42:13-35
+71            android:exported="false" />
+71-->[cs522-library.aar] C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\AndroidManifest.xml:43:13-37
+72
+73        <provider
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+74            android:name="androidx.startup.InitializationProvider"
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+75            android:authorities="edu.stevens.cs522.chatserver.androidx-startup"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+76            android:exported="false" >
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+77            <meta-data
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+79                android:value="androidx.startup" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+80        </provider>
+81
+82        <receiver
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+84            android:directBootAware="false"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+85            android:enabled="true"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+86            android:exported="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+87            android:permission="android.permission.DUMP" >
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shaggy\.gradle\caches\transforms-3\de2bd7d7b997fa78474c377f3f0fc93c\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+99            </intent-filter>
+100        </receiver>
+101    </application>
+102
+103</manifest>

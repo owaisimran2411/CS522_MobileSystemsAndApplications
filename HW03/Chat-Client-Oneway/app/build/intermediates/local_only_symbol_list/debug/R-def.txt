@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+id chat_name
+id destination_addr
+id message_text
+id send_button
+integer app_port
+layout chat_client
+mipmap ic_launcher
+string app_name
+string chat_name
+string default_chatroom
+string destination_addr
+string destination_hint
+string destination_host_default
+string latitude
+string longitude
+string message_edit_text
+string send_label
+style AppTheme

@@ -1,0 +1,8 @@
+edu.stevens.cs522.chatclient.app-cs522-library-0 C:\Users\Shaggy\.gradle\caches\transforms-3\d5ed4383bd61079e460a6e7529678c59\transformed\cs522-library\res
+edu.stevens.cs522.chatclient.app-pngs-1 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\build\generated\res\pngs\debug
+edu.stevens.cs522.chatclient.app-resValues-2 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\build\generated\res\resValues\debug
+edu.stevens.cs522.chatclient.app-packageDebugResources-3 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+edu.stevens.cs522.chatclient.app-packageDebugResources-4 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+edu.stevens.cs522.chatclient.app-merged_res-5 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\build\intermediates\merged_res\debug
+edu.stevens.cs522.chatclient.app-debug-6 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\src\debug\res
+edu.stevens.cs522.chatclient.app-main-7 C:\Users\Shaggy\OneDrive\Documents\Owais\CS522_MobileSystemsAndApplications\HW03\Chat-Client-Oneway\app\src\main\res

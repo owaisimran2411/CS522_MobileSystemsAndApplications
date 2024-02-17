@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/layout_view_peer.xml.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/layout/view_peer.xml"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/layout_message.xml.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/layout/message.xml"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/layout_view_messages.xml.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/layout/view_messages.xml"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/layout_view_peers.xml.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/layout/view_peers.xml"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.stevens.cs522.chatserver.app-merged_res-17:/menu_chatserver_menu.xml.flat",
+        "source": "edu.stevens.cs522.chatserver.app-main-19:/menu/chatserver_menu.xml"
+    }
+]
