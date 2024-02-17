@@ -21,7 +21,94 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf8b01b-25d5-47e0-99db-faf35018624e" name="Changes" comment="" />
+    <list default="true" id="caf8b01b-25d5-47e0-99db-faf35018624e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/libs/cs522-library.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/androidTest/java/edu/stevens/cs522/chatclient/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/java/edu/stevens/cs522/chatclient/activities/ChatClientActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/java/edu/stevens/cs522/chatclient/location/CurrentLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/layout/chat_client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/app/src/test/java/edu/stevens/cs522/chatclient/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Client-Oneway/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/libs/cs522-library.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/schemas/edu.stevens.cs522.chatserver.databases.ChatDatabase/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/androidTest/java/edu/stevens/cs522/chatserver/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/activities/ChatServerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/activities/ViewPeerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/activities/ViewPeersActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/databases/ChatDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/databases/MessageDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/databases/PeerDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/entities/DateConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/entities/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/entities/Peer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/ui/CustomArrayAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/ui/MessagesAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/java/edu/stevens/cs522/chatserver/ui/SimpleArrayAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/layout/message.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/layout/view_messages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/layout/view_peer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/layout/view_peers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/menu/chatserver_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/app/src/test/java/edu/stevens/cs522/chatserver/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/Chat-Server-Oneway/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HW04/bandicam 2024-02-17 16-29-50-217.mp4" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +117,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Shaggy\.android\avd\Copy_of_Pixel_3a_API_34_extension_level_7_x86_64.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\owais\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -69,7 +156,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Shaggy/OneDrive/Documents/Owais/CS522_MobileSystemsAndApplications/HW04/Chat-Server-Oneway"
+    "last_opened_file_path": "D:/Stevens/CS522/Homework/HW04/MuhammadOwais_Imran/HW04ApplicationArchitectureI/Chat-Server-Oneway"
   }
 }]]></component>
   <component name="RunManager">
