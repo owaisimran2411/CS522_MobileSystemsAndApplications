@@ -1,0 +1,101 @@
+{
+    "logs": [
+        {
+            "outputFile": "edu.stevens.cs522.chatclient.app-merged_res-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shaggy\\OneDrive\\Documents\\Owais\\CS522_MobileSystemsAndApplications\\HW04\\Chat-Client-Oneway\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "90,149",
+                        "endColumns": "57,55",
+                        "endOffsets": "143,200"
+                    },
+                    "to": {
+                        "startLines": "5,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "199,257",
+                        "endColumns": "57,55",
+                        "endOffsets": "252,308"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shaggy\\OneDrive\\Documents\\Owais\\CS522_MobileSystemsAndApplications\\HW04\\Chat-Client-Oneway\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,101,148",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "96,143,194"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shaggy\\OneDrive\\Documents\\Owais\\CS522_MobileSystemsAndApplications\\HW04\\Chat-Client-Oneway\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "191"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "936",
+                        "endLines": "20",
+                        "endColumns": "12",
+                        "endOffsets": "1033"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shaggy\\OneDrive\\Documents\\Owais\\CS522_MobileSystemsAndApplications\\HW04\\Chat-Client-Oneway\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "7,6,16,10,13,14,4,8,9,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "280,198,651,423,524,583,133,325,373,701,772",
+                        "endColumns": "43,80,48,53,57,64,61,46,48,69,43",
+                        "endOffsets": "319,274,695,472,577,643,190,367,417,766,811"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "313,357,438,487,541,599,664,726,773,822,892",
+                        "endColumns": "43,80,48,53,57,64,61,46,48,69,43",
+                        "endOffsets": "352,433,482,536,594,659,721,768,817,887,931"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "edu.stevens.cs522.chatclient.app-merged_res-5:/values-w820dp-v13_values-w820dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shaggy\\OneDrive\\Documents\\Owais\\CS522_MobileSystemsAndApplications\\HW04\\Chat-Client-Oneway\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "295",
+                        "endColumns": "57",
+                        "endOffsets": "348"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    }
+                }
+            ]
+        }
+    ]
+}

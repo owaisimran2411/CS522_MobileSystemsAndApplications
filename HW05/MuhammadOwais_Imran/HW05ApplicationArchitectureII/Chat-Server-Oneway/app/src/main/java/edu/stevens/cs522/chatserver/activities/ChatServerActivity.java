@@ -113,10 +113,9 @@ public class ChatServerActivity extends FragmentActivity implements OnClickListe
 
         // TODO Initialize the recyclerview and adapter for messages
 
-//        RecyclerView messageRecyclerView = messageList;
         messagesAdapter = new MessagesAdapter();
         messageList.setAdapter(messagesAdapter);
-//        messageRecyclerView.setAdapter(messagesAdapter);
+
         // done TODO
 
 
