@@ -32,7 +32,12 @@ public class PeerViewModel extends AndroidViewModel {
     public LiveData<List<Message>> fetchMessagesFromPeer(Peer peer) {
         // TODO finish this
 
-        return null;
+        if(messages == null || (currentPeer != null && currentPeer.id != peer.id)) {
+            messages = loadMessages(peer);
+        }
+        return messages;
+
+        // done TOOD
     }
 
     private LiveData<List<Message>> loadMessages(Peer peer) {

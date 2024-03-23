@@ -27,14 +27,19 @@ public class PeersViewModel extends AndroidViewModel {
 
     // TODO finish this
     public LiveData<List<Peer>> fetchAllPeers() {
-
-        return null;
+        if(peers == null) {
+            peers = loadPeers();
+        }
+        return peers;
     }
+    // done TODO
 
     // TODO finish this
     private LiveData<List<Peer>> loadPeers() {
-        return null;
+        LiveData<List<Peer>> peersLiveData = chatDatabase.peerDao().fetchAllPeers();
+        return peersLiveData;
     }
+    // done TODO
 
 
     @Override
