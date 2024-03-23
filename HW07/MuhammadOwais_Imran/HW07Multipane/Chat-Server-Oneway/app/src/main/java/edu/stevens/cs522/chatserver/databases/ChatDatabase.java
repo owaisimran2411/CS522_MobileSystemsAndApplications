@@ -20,6 +20,13 @@ import edu.stevens.cs522.chatserver.entities.Peer;
 
 // TODO Add annotations (including @TypeConverters)
 
+@Database(entities = {
+        Peer.class,
+        Chatroom.class,
+        Message.class
+}, version = 1)
+@TypeConverters(DateConverter.class)
+// done TODO
 public abstract class ChatDatabase extends RoomDatabase {
 
     private static final String DATABASE_NAME = "messages.db";
