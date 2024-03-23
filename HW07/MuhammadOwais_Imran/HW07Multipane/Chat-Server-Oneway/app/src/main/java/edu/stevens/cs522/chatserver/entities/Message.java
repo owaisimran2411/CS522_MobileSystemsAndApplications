@@ -22,11 +22,29 @@ import edu.stevens.cs522.base.DateUtils;
 // You must also declare indices on the FK columns, otherwise integrity checking
 // may trigger a linear search of this table.
 
-
+@Entity(foreignKeys = {
+        @ForeignKey(
+                entity = Peer.class,
+                onDelete = ForeignKey.CASCADE,
+                parentColumns = "name",
+                childColumns = "sender"
+        ),
+        @ForeignKey(
+                entity = Chatroom.class,
+                onDelete = ForeignKey.CASCADE,
+                parentColumns = "name",
+                childColumns = "chatroom"
+        )
+}, indices = {
+        @Index(value = "sender"), @Index(value = "chatroom")
+})
+// done TODO
 public class Message implements Parcelable {
 
     // TODO annotate
+    @PrimaryKey(autoGenerate = true)
     public long id;
+    // done TODO
 
     public String chatroom;
 
