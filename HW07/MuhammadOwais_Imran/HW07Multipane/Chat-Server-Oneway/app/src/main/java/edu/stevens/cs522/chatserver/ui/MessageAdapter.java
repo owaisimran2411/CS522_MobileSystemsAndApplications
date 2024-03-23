@@ -73,6 +73,11 @@ public abstract class MessageAdapter extends RecyclerView.Adapter<MessageAdapter
 
         // TODO set the fields of the view for the message
         // Use getHeading() to get the heading in the message
+        Message msg = messages.get(position);
+        viewHolder.setMetadata(getHeading(msg));
+        viewHolder.setMessage(String.format("- %s", msg.messageText));
+
+        // done TODO
 
     }
 
