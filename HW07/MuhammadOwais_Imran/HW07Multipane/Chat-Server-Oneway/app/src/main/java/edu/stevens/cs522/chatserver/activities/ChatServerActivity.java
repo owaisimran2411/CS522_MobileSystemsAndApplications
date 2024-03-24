@@ -143,7 +143,14 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
 
         if (isTwoPane) {
             // TODO In two-pane mode, need to prevent exiting app when a chat room is open (see setChatroom).
-            setChatroom(sharedViewModel.getSelected());
+            callback = new OnBackPressedCallback(false) {
+                @Override
+                public void handleOnBackPressed() {
+                    // do nothing
+                    getSupportFragmentManager().popBackStack();
+                }
+            };
+            getOnBackPressedDispatcher().addCallback(callback);
             // maybe done TODO
         } else {
             /*
