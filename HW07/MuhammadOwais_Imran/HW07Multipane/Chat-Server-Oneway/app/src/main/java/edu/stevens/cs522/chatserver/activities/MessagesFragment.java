@@ -150,7 +150,7 @@ public class MessagesFragment extends Fragment implements OnClickListener {
         LiveData<List<Message>> messagesLiveData = chatViewModel.fetchAllMessages(chatroom);
         Observer<List<Message>> observer = message -> {
             messagesAdapter.setMessages(message);
-            messageList.setAdapter(messagesAdapter);
+            messagesAdapter.notifyDataSetChanged();
 
         };
         messagesLiveData.observe(getViewLifecycleOwner(), observer);
