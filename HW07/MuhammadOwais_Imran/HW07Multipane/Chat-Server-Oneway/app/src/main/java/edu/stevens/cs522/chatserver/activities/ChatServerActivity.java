@@ -23,6 +23,7 @@ import android.widget.Toast;
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.room.Database;
 
 import java.io.StringReader;
 import java.net.DatagramPacket;
@@ -34,6 +35,7 @@ import edu.stevens.cs522.base.DatagramConnectionFactory;
 import edu.stevens.cs522.base.IDatagramConnection;
 import edu.stevens.cs522.chatserver.R;
 import edu.stevens.cs522.chatserver.databases.ChatDatabase;
+import edu.stevens.cs522.chatserver.databases.ChatroomDao;
 import edu.stevens.cs522.chatserver.entities.Chatroom;
 import edu.stevens.cs522.chatserver.entities.Message;
 import edu.stevens.cs522.chatserver.entities.Peer;
@@ -128,16 +130,21 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
         setContentView(R.layout.chat_activity);
 
         // TODO get shared view model for current chatroom
+        sharedViewModel = new ViewModelProvider(this).get(SharedViewModel.class);
+        // done TODO
 
         // TODO get database reference (for insertions)
+        chatDatabase = ChatDatabase.getInstance(getApplicationContext());
+        // done TODO
 
 
         isTwoPane = getResources().getBoolean(R.bool.is_two_pane);
 
-        isTwoPane = getResources().getBoolean(R.bool.is_two_pane);
+
         if (isTwoPane) {
             // TODO In two-pane mode, need to prevent exiting app when a chat room is open (see setChatroom).
-
+            setChatroom(sharedViewModel.getSelected());
+            // maybe done TODO
         } else {
             /*
              * Add an index fragment as the fragment in the frame layout (single-pane layout)
@@ -237,9 +244,12 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
             /*
 			 * TODO upsert chatroom and peer, and insert message into the database
 			 */
+            chatDatabase.chatroomDao().insert(chatroom);
+            chatDatabase.peerDao().upsert(peer);
+            chatDatabase.messageDao().persist(message);
 
             /*
-             * End TODO
+             * done TODO
              *
              * The livedata for the messages should update via observer automatically.
              */
@@ -285,6 +295,9 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         // TODO inflate a menu with PEERS option
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chatserver_menu, menu);
+        // done TODO
 
 
         return true;
@@ -297,7 +310,9 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
         if (itemId == R.id.peers) {
             // TODO PEERS provide the UI for viewing list of peers
             // The subactivity will query the database for the list of peers.
-
+            Intent intent = new Intent(this, ViewPeersActivity.class);
+            startActivity(intent);
+            // done TODO
 
             return true;
 
@@ -315,10 +330,14 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
         sharedViewModel.select(chatroom);
         if (isTwoPane) {
             // TODO for two pane, enable Back callback if we are entering a chatroom
+            callback.setEnabled(true);
+            // maybe done TODO
 
         } else {
             // TODO For single pane, replace chatrooms fragment with messages fragment.
             // Add chatrooms fragment to backstack, so pressing BACK key will return to index.
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MessagesFragment()).addToBackStack(SHOWING_CHATROOMS_TAG).commit();
+            // done TODO
 
         }
     }
