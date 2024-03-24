@@ -71,7 +71,6 @@ public class ViewPeerActivity extends FragmentActivity {
 
         // TODO query the database asynchronously, and use messagesAdapter to display the result
         Observer<List<Message>> peerMessageObserver = message -> {
-//            messagesAdapter.setDataset(message); find the bug fix to this method call if code breaks
             messagesAdapter.setMessages(message);
             messagesAdapter.notifyDataSetChanged();
         };

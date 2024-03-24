@@ -151,7 +151,7 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
                 }
             };
             getOnBackPressedDispatcher().addCallback(callback);
-            // maybe done TODO
+            // done TODO
         } else {
             /*
              * Add an index fragment as the fragment in the frame layout (single-pane layout)
@@ -338,7 +338,7 @@ public class ChatServerActivity extends AppCompatActivity implements ChatroomsFr
         if (isTwoPane) {
             // TODO for two pane, enable Back callback if we are entering a chatroom
             callback.setEnabled(true);
-            // maybe done TODO
+            // done TODO
 
         } else {
             // TODO For single pane, replace chatrooms fragment with messages fragment.

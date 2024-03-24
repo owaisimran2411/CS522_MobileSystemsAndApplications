@@ -105,7 +105,7 @@ public class ChatroomsFragment extends Fragment implements TextAdapter.OnItemCli
         LiveData<List<Chatroom>> chatrooms = chatroomViewModel.fetchAllChatrooms();
         Observer<List<Chatroom>> observer = chatroom -> {
             chatroomsAdapter.setDataset(chatroom);
-            chatroomList.setAdapter(chatroomsAdapter);
+            chatroomsAdapter.notifyDataSetChanged();
         };
 
         chatrooms.observe(getViewLifecycleOwner(), observer);

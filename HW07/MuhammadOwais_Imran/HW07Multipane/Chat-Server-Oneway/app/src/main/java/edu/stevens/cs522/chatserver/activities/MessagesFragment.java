@@ -141,7 +141,6 @@ public class MessagesFragment extends Fragment implements OnClickListener {
         if (chatroom == null) {
             messagesAdapter.setMessages(new ArrayList<>(0));
             messagesAdapter.notifyItemRangeChanged(0, 1);
-//            messageList.setAdapter(messagesAdapter); uncomment this in case of bug
             return;
         }
         // TODO query the database asynchronously, and use messagesAdapter to display the result

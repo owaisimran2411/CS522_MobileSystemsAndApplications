@@ -49,7 +49,6 @@ public class ViewPeersActivity extends FragmentActivity implements TextAdapter.O
         Observer<List<Peer>> peerObserver = peer -> {
             peerAdapter.setDataset(peer);
             peerAdapter.notifyDataSetChanged();
-//            peersList.setAdapter(peerAdapter);
         };
 
         peers.observe(this, peerObserver);
