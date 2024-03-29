@@ -19,6 +19,12 @@ import edu.stevens.cs522.base.InetAddressUtils;
  */
 
 // TODO annotate (must define a unique index on name for FK reference in Message)
+    // done TODO
+@Entity(
+        indices = {
+                @Index(value = "name", unique = true)
+        }
+)
 public class Peer implements Parcelable {
 
     @PrimaryKey(autoGenerate = true)
@@ -43,6 +49,12 @@ public class Peer implements Parcelable {
 
     public Peer(Parcel in) {
         // TODO
+        id = in.readLong();
+        name = in.readString();
+        timestamp = DateUtils.readDate(in);
+        latitude = in.readDouble();
+        longitude = in.readDouble();
+        // done TODO
 
     }
 
@@ -54,7 +66,12 @@ public class Peer implements Parcelable {
     @Override
     public void writeToParcel(Parcel out, int flags) {
         // TODO
-
+        out.writeLong(id);
+        out.writeString(name);
+        DateUtils.writeDate(out, timestamp);
+        out.writeDouble(longitude);
+        out.writeDouble(latitude);
+        // done TODO
     }
 
     public static final Creator<Peer> CREATOR = new Creator<Peer>() {
@@ -62,13 +79,15 @@ public class Peer implements Parcelable {
         @Override
         public Peer createFromParcel(Parcel source) {
             // TODO
-            return null;
+            return new Peer(source);
+            // done TODO
         }
 
         @Override
         public Peer[] newArray(int size) {
             // TODO
-            return null;
+            return new Peer[size];
+            // done TODO
         }
 
     };
