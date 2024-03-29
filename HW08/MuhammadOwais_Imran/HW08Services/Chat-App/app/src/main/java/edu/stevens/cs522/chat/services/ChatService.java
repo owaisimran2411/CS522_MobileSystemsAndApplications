@@ -87,8 +87,12 @@ public class ChatService extends Service implements IChatService {
         }
 
         // TODO initialize the thread that sends messages
+        HandlerThread handlerThread = new HandlerThread(SEND_TAG);
+        handlerThread.start();
 
-        // end TODO
+        sendHandler = new SendHandler(handlerThread.getLooper());
+
+        // done TODO
 
         receiveThread = new Thread(new ReceiverThread());
         receiveThread.start();
@@ -124,6 +128,18 @@ public class ChatService extends Service implements IChatService {
                      Date timestamp, double latitude, double longitude, ResultReceiver receiver) {
         android.os.Message message = sendHandler.obtainMessage();
         // TODO send the message to the sending thread (add a bundle with params)
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(sendHandler.HDLR_DEST_ADDRESS, destAddress);
+        bundle.putSerializable(sendHandler.HDLR_TIMESTAMP, timestamp);
+        bundle.putParcelable(sendHandler.HDLR_RECEIVER, receiver);
+        bundle.putString(sendHandler.HDLR_CHATROOM, chatRoom);
+        bundle.putString(sendHandler.HDLR_MESSAGE_TEXT, messageText);
+        bundle.putDouble(sendHandler.HDLR_LATITUDE, latitude);
+        bundle.putDouble(sendHandler.HDLR_LATITUDE, longitude);
+
+        message.setData(bundle);
+        sendHandler.sendMessage(message);
+        // done TODO
 
     }
 
@@ -167,9 +183,16 @@ public class ChatService extends Service implements IChatService {
                 Bundle data = message.getData();
 
                 // TODO get data from message (including result receiver)
+                destinationAddr = (String) data.getString(HDLR_DEST_ADDRESS);
+                chatRoom = data.getString(HDLR_CHATROOM);
+                messageText = data.getString(HDLR_MESSAGE_TEXT);
+                longitude = data.getDouble(HDLR_LONGITUDE);
+                latitude = data.getDouble(HDLR_LATITUDE);
+                receiver = data.getParcelable(HDLR_RECEIVER);
+                timestamp = (Date) data.getSerializable(HDLR_TIMESTAMP);
 
 
-                // End todo
+                // done todo
 
                 /*
                  * Insert into the local database
@@ -309,6 +332,10 @@ public class ChatService extends Service implements IChatService {
                     /*
                      * TODO upsert chatroom and peer, and insert message into the database
                      */
+                    chatDatabase.chatroomDao().insert(chatroom);
+                    chatDatabase.peerDao().upsert(peer);
+                    chatDatabase.messageDao().persist(message);
+                    // done TODO
 
 
 
