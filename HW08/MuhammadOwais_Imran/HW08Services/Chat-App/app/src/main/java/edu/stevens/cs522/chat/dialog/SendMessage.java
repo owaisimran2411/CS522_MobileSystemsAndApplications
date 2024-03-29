@@ -86,9 +86,10 @@ public class SendMessage extends DialogFragment {
         }
 
         // TODO initialize the UI.
+        destinationAddr = rootView.findViewById(R.id.destination_addr);
+        messageText = rootView.findViewById(R.id.message_text);
 
-
-        // End todo
+        // done todo
 
         Button confirm = rootView.findViewById(R.id.send);
         confirm.setOnClickListener(confirmListener);
@@ -139,6 +140,8 @@ public class SendMessage extends DialogFragment {
             Log.d(TAG, String.format("...sending \"%s\" to %s as %s....", message, chatroom, clientName));
 
             // TODO tell the activity to send the message
+            listener.send(destAddrString, chatroom, clientName, message);
+            // done TODO
 
             Log.d(TAG, "...dismissing dialog.");
             SendMessage.this.dismiss();
