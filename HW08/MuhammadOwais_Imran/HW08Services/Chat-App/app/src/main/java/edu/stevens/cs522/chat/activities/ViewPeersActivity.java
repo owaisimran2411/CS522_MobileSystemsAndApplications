@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,10 +41,19 @@ public class ViewPeersActivity extends FragmentActivity implements TextAdapter.O
         peersList.setAdapter(peerAdapter);
 
         // TODO create the view model and query for a list of all peers
+        PeersViewModel peersViewModel = new ViewModelProvider(this).get(PeersViewModel.class);
+        LiveData<List<Peer>> peers = peersViewModel.fetchAllPeers();
+        // done TODO
 
 
         // TODO observer for list of peers updates the peer adapter
+        Observer<List<Peer>> observer = peer -> {
+            peerAdapter.setDataset(peer);
+            peerAdapter.notifyDataSetChanged();
+        };
 
+        peers.observe(this, observer);
+        // done TODO
     }
 
     @Override
