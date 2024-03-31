@@ -48,6 +48,7 @@ public abstract class PeerDao {
      * Update the metadata for a peer (GPS coordinates, last seen)
      * @param peer
      */
+    @Update
     protected abstract void update(Peer peer);
 
     @Transaction

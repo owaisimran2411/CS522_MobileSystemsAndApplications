@@ -133,6 +133,7 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
                 @Override
                 public void handleOnBackPressed() {
                     // do nothing
+                    sharedViewModel.select(null);
                     getSupportFragmentManager().popBackStack();
                 }
             };
