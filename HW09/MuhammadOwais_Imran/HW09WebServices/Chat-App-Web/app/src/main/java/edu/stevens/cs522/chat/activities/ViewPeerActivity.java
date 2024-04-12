@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,8 +46,14 @@ public class ViewPeerActivity extends FragmentActivity {
         }
 
         // TODO Set the fields of the UI
+        // done TODO
+        TextView username = findViewById(R.id.view_user_name);
+        TextView location = findViewById(R.id.view_location);
+        TextView timestamp = findViewById(R.id.view_timestamp);
 
-        // End TODO
+        username.setText(getString(R.string.view_user_name, peer.name));
+        location.setText(getString(R.string.view_location, peer.latitude, peer.longitude));
+        timestamp.setText(getString(R.string.view_timestamp, formatTimestamp(peer.timestamp)));
 
         // Initialize the recyclerview and adapter for messages
         RecyclerView messageList = findViewById(R.id.message_list);
@@ -56,8 +63,18 @@ public class ViewPeerActivity extends FragmentActivity {
         messageList.setAdapter(messageAdapter);
 
         // TODO open the view model
+        // done TODO
+        PeerViewModel peerViewModel = new ViewModelProvider(this).get(PeerViewModel.class);
 
         // TODO query the database asynchronously, and use messagesAdapter to display the result
+        // done TODO
+        LiveData<List<Message>> messages = peerViewModel.fetchMessagesFromPeer(peer);
+        Observer<List<Message>> observer = msg -> {
+            messageAdapter.setMessages(msg);
+            messageAdapter.notifyDataSetChanged();
+
+        };
+        messages.observe(this, observer);
 
     }
 

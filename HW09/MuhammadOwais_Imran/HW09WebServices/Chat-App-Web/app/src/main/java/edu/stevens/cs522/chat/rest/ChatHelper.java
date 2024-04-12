@@ -99,6 +99,7 @@ public class ChatHelper {
                 throw new IllegalStateException("Trying to cancel sync when it is not scheduled!");
             }
 
+
             workManager.cancelPeriodicUniqueWork(syncRequest);
 
         }

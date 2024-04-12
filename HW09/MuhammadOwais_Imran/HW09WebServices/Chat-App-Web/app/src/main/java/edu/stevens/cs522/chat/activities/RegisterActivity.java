@@ -55,6 +55,8 @@ public class RegisterActivity extends Activity implements OnClickListener {
         setContentView(R.layout.register);
 
         // TODO instantiate helper for service (remember to use static context!)
+        // done TODO
+        helper = new ChatHelper(getApplicationContext());
 
         serverUriText = (EditText) findViewById(R.id.chat_server_text);
         serverUriText.setText(getString(R.string.server_uri_default));
@@ -106,6 +108,8 @@ public class RegisterActivity extends Activity implements OnClickListener {
             Log.d(TAG, "Registering with chat name: "+userName);
 
             // TODO use helper to register
+            // done TODO
+            helper.register(serverUri, userName);
 
 
         } else {

@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -84,6 +85,9 @@ public class ChatroomsFragment extends Fragment implements View.OnClickListener,
         chatroomList.setLayoutManager(new LinearLayoutManager(requireActivity()));
 
         // TODO Initialize the recyclerview and adapter for messages
+        // done TODO
+        chatroomsAdapter = new TextAdapter<Chatroom>(chatroomList, this);
+        chatroomList.setAdapter(chatroomsAdapter);
 
 
         chatroomName = rootView.findViewById(R.id.chatroom_add_text);
@@ -105,9 +109,19 @@ public class ChatroomsFragment extends Fragment implements View.OnClickListener,
         }
 
         // TODO initialize the chatroom view model
+        // done TODO
+        chatroomViewModel = new ViewModelProvider(this).get(ChatroomViewModel.class);
 
 
         // TODO query the database asynchronously, and use messagesAdapter to display the result
+        // done TODO
+        LiveData<List<Chatroom>> chatrooms = chatroomViewModel.fetchAllChatrooms();
+        Observer<List<Chatroom>> observer = chat -> {
+            chatroomsAdapter.setDataset(chat);
+            chatroomsAdapter.notifyDataSetChanged();
+        };
+
+        chatrooms.observe(getViewLifecycleOwner(), observer);
 
     }
 
@@ -132,6 +146,9 @@ public class ChatroomsFragment extends Fragment implements View.OnClickListener,
         }
 
         // TODO request the activity to add the chatroom to the database
+        // done TODO
+        listener.addChatroom(chatroomName.getText().toString());
+
 
         chatroomName.setText("");
     }
@@ -140,6 +157,8 @@ public class ChatroomsFragment extends Fragment implements View.OnClickListener,
     public void onItemClick(RecyclerView parent, View view, int position, Chatroom chatroom) {
         setActivatedPosition(position);
         // TODO ask the activity to respond to the selection (in single-pane layout, it will push detail fragment)
+        // done TODO
+        listener.setChatroom(chatroom);
     }
 
     @Override

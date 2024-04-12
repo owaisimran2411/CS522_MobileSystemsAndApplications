@@ -86,14 +86,33 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
         setContentView(R.layout.chat_activity);
 
         // TODO get shared view model for current chatroom (make sure it is initially null!)
+        // done TODO
+        if(sharedViewModel != null ){
+            sharedViewModel = null;
+        }
+        sharedViewModel = new ViewModelProvider(this).get(SharedViewModel.class);
 
         // TODO instantiate helper for service
+        // done TODO
+        chatHelper = new ChatHelper(ChatActivity.this);
 
         // TODO Get chatroom dao (Only used to insert a chatroom)
+        // done TODO
+        chatroomDao = ChatDatabase.getInstance(getApplicationContext()).chatroomDao();
 
         isTwoPane = getResources().getBoolean(R.bool.is_two_pane);
         if (isTwoPane) {
             // TODO In two-pane mode, need to prevent exiting app when a chat room is open (see setChatroom).
+            // done TODO
+            callback = new OnBackPressedCallback(false) {
+                @Override
+                public void handleOnBackPressed() {
+                    // do nothing
+                    sharedViewModel.select(null);
+                    getSupportFragmentManager().popBackStack();
+                }
+            };
+            getOnBackPressedDispatcher().addCallback(callback);
 
         } else {
             // Add an index fragment as the fragment in the frame layout (single-pane layout)
@@ -117,12 +136,20 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
 	public void onResume() {
         super.onResume();
         // TODO start synchronizing with cloud chat servce
+        // done TODO
+        if(!Settings.SYNC) {
+            chatHelper.startMessageSync();
+        }
 
     }
 
     public void onPause() {
         super.onPause();
         // TODO stop synchronization of messages with chat server
+        // done TODO
+        if(Settings.SYNC) {
+            chatHelper.stopMessageSync();
+        }
     }
 
     public void onDestroy() {
@@ -133,6 +160,9 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         // TODO inflate a menu with REGISTER and PEERS options
+        // done TODO
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chatserver_menu, menu);
 
 
         return true;
@@ -150,6 +180,9 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
 
         } else if (itemId == R.id.peers) {
             // TODO PEERS: provide the UI for viewing list of peers
+            // done TODO
+            Intent intent = new Intent(this, ViewPeersActivity.class);
+            startActivity(intent);
 
             return true;
 
@@ -181,6 +214,8 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
      */
     public void send(String chatroom, String message) {
         // TODO send the message
+        // done TODO
+        chatHelper.postMessage(chatroom, message);
 
         Log.i(TAG, "Sent message: " + message);
     }
@@ -207,10 +242,18 @@ public class ChatActivity extends AppCompatActivity implements ChatroomsFragment
         sharedViewModel.select(chatroom);
         if (isTwoPane) {
             // TODO for two pane, enable Back callback if we are entering a chatroom
+            // done TODO
+            callback.setEnabled(true);
 
         } else {
             // TODO For single pane, replace chatrooms fragment with messages fragment.
+            // done TODO
             // Add chatrooms fragment to backstack, so pressing BACK key will return to index.
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container,new MessagesFragment())
+                    .addToBackStack(SHOWING_CHATROOMS_TAG)
+                    .commit();
 
         }
     }
