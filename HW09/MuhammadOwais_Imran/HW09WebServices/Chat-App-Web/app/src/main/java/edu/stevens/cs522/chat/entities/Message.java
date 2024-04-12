@@ -18,13 +18,23 @@ import edu.stevens.cs522.base.DateUtils;
  * Created by dduggan.
  */
 
-// TODO annotate (including FK constraints)
+
 // You must also declare indices on the FK columns, otherwise integrity checking
 // may trigger a linear search of this table.
 
+@Entity(
+        foreignKeys = @ForeignKey(
+                entity = Peer.class,
+                parentColumns = "name",
+                childColumns = "sender"
+        ),
+        indices = {
+                @Index(value = {"sender"})
+        }
+)
 public class Message implements Parcelable {
 
-    // TODO annotate
+    @PrimaryKey(autoGenerate = true)
     public long id;
 
     public String chatroom;
