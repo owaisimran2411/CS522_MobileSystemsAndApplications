@@ -146,11 +146,9 @@ public class RestMethod {
         builder.interceptors().add(interceptor);
         OkHttpClient client = builder.build();
 
-        /*
-         * TODO Wrap the okhttp client with a retrofit stub factory.
-         */
 
-        return null;
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(serverUri.toString()).addConverterFactory(GsonConverterFactory.create(this.gson)).client(client).build();
+        return retrofit.create(ServerApi.class);
     }
 
 
@@ -159,7 +157,10 @@ public class RestMethod {
             Log.d(TAG, "Performing REST method for registration....");
             ServerApi server = createClient(request.chatServer, request);
             Response<Void> response = null;
-            // TODO execute the Web service call
+
+            Call<Void> ServiceCall = server.register(request.chatname);
+            response = ServiceCall.execute();
+            Log.d(TAG, String.format("Executed Service (RegisterRequest) Response: %s", response));
 
 
             return request.getResponse(response);
@@ -178,7 +179,10 @@ public class RestMethod {
             Log.d(TAG, String.format("Sending \"%s\" to %s", request.message.messageText, request.message.chatroom));
 
             Response<Void> response = null;
-            // TODO execute the Web service call
+
+            Call<Void> ServiceCall = server.postMessage(request.message.sender, request.message);
+            response = ServiceCall.execute();
+            Log.d(TAG, String.format("Execute Service PostMessageRequest: %s", response));
 
 
             return request.getResponse(response);
@@ -220,9 +224,10 @@ public class RestMethod {
 
         ChatServiceResponse response = null;
 
-        // TODO execute the Web service call
 
-        // end TODO
+        Call<ResponseBody> ServiceCall = server.syncMessages(chatName, request.lastSequenceNumber, requestBody);
+        callResponse = ServiceCall.execute();
+        response = request.getResponse(callResponse);
 
         /*
          * If the connection was successful, the request processor will process the streaming input JSON data.

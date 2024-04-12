@@ -22,7 +22,10 @@ public class PostMessageResponse extends ChatServiceResponse {
     public PostMessageResponse(Response<?> response) throws IOException {
         super(response);
 
-        // TODO set messageId from HTTP response header
+        String location = response.headers().get(LOCATION);
+        if(location != null) {
+            messageId = Long.parseLong(Uri.parse(location).getLastPathSegment());
+        }
 
 
     }

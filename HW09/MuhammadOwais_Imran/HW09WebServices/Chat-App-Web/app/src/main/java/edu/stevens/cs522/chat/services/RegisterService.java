@@ -15,6 +15,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -126,11 +127,18 @@ public class RegisterService extends Service {
         notificationBuilder.setContentIntent(pendingActivityIntent);
 
         /*
-         * TODO Add a CANCEL button to the notification: Send intent with ACTION_CANCEL to the service.
+         * TO DO Add a CANCEL button to the notification: Send intent with ACTION_CANCEL to the service.
          * https://developer.android.com/reference/android/app/Notification.Builder#addAction(android.app.Notification.Action)
          */
         // You will need this to create the Notification.Action.
         Icon icon = Icon.createWithResource(this, R.drawable.ic_chat);
+        Intent cancelIntent = new Intent(this, RegisterService.class);
+        cancelIntent.setAction(ACTION_CANCEL);
+
+        PendingIntent pendingCancelIntent = PendingIntent.getService(this, 0, cancelIntent, PendingIntent.FLAG_IMMUTABLE);
+        Notification.Action cancelAction = new Notification.Action.Builder(icon, "CANCEL", pendingCancelIntent).build();
+        notificationBuilder.addAction(cancelAction);
+
 
         /*
          * Now construct the notification, set the service type and bind the service to the foreground
@@ -199,14 +207,13 @@ public class RegisterService extends Service {
                     // Use notification to report registration result
                     if (registerResponse != null && !(registerResponse instanceof ErrorResponse)) {
 
-                        // TODO let user know request succeeded (update the notification)
                         // DO NOT DISPLAY A TOAST (It's unsafe.  Why?)
+                        notificationBuilder.setContentText("SUCCESS: request successfully processed");
 
 
                     } else {
-
-                        // TODO let user know request failed (update the notification)
                         // DO NOT DISPLAY A TOAST (It's unsafe.  Why?)
+                        notificationBuilder.setContentText("FAILURE: request can not be processed");
 
 
                     }

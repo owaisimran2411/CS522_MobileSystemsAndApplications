@@ -41,7 +41,9 @@ public class ChatHelper {
 
     public void register (Uri chatServer, String chatName) {
         if (chatName != null && !chatName.isEmpty()) {
-            // TODO register with the cloud chat service
+
+            RegisterService service = null;
+            service.register(context, chatServer, chatName);
         }
     }
 
@@ -61,12 +63,13 @@ public class ChatHelper {
             data.putParcelable(PostMessageWorker.MESSAGE_KEY, mesg);
 
             /*
-             * TODO enqueue a request with workManager to post this message
              *
              * Depending on Settings.SYNC, message will be sent immediately, or just added locally
              * and eventually synchronized with server database.  The request processor
              * is where either of these will be done.
             */
+            OneTimeWorkRequest request = new OneTimeWorkRequest(PostMessageWorker.class, data);
+            workManager.enqueueUniqueWork(request);
 
         }
     }
@@ -81,7 +84,9 @@ public class ChatHelper {
                 throw new IllegalStateException("Trying to schedule sync when it is already scheduled!");
             }
 
-            // TODO schedule periodic synchronization with message database
+            Bundle data = null;
+            syncRequest = new PeriodicWorkRequest(PostMessageWorker.class, data, SYNC_INTERVAL);
+            workManager.enqueuePeriodicUniqueWork(syncRequest);
 
         }
     }
@@ -94,7 +99,7 @@ public class ChatHelper {
                 throw new IllegalStateException("Trying to cancel sync when it is not scheduled!");
             }
 
-            // TODO cancel periodic synchronization with message database
+            workManager.cancelPeriodicUniqueWork(syncRequest);
 
         }
     }
