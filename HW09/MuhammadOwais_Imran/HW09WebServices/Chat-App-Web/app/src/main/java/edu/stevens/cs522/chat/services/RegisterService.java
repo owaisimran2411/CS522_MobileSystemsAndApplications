@@ -209,11 +209,12 @@ public class RegisterService extends Service {
 
                         // DO NOT DISPLAY A TOAST (It's unsafe.  Why?)
                         notificationBuilder.setContentText(getText(R.string.registered_notification_message)).setTicker(getText(R.string.registered_ticker_text));
-
+                        notificationManager.notify(notificationId, notificationBuilder.build());
 
                     } else {
                         // DO NOT DISPLAY A TOAST (It's unsafe.  Why?)
                         notificationBuilder.setContentText(getText(R.string.register_failed_notification_message)).setTicker(getText(R.string.register_failed_ticker_text));
+                        notificationManager.notify(notificationId, notificationBuilder.build());
 
 
                     }

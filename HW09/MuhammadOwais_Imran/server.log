@@ -1,0 +1,35 @@
+Apr 14, 2024 4:24:26 PM edu.stevens.cs522.chat.webservice.Main info
+INFO: Starting HTTP server...
+Apr 14, 2024 4:24:27 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [10.0.0.116:8080]
+Apr 14, 2024 4:24:27 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.
+Apr 14, 2024 4:24:27 PM edu.stevens.cs522.chat.webservice.Main info
+INFO: Listening at http://10.0.0.116:8080
+Apr 14, 2024 4:24:27 PM edu.stevens.cs522.chat.webservice.Main info
+INFO: Service available at http://10.0.0.116:8080/chat
+Hit enter to stop...
+Apr 14, 2024 4:34:14 PM edu.stevens.cs522.chat.webservice.ChatResource register
+INFO: Received registration request (appId=ce6ee28a-0d91-4381-87b9-6e1b9b906b18, chat-name=Owais, timestamp=1713126854472, latitude=40.744906, longitude=-74.023937)
+Apr 14, 2024 4:34:14 PM edu.stevens.cs522.chat.webservice.ChatResource register
+INFO: Successfully registered user Owais with UUID ce6ee28a-0d91-4381-87b9-6e1b9b906b18.
+Apr 14, 2024 4:35:03 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received postMessage request (name = Owais)
+Apr 14, 2024 4:35:03 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received message "hello from Owais" (chatroom _default)
+Apr 14, 2024 4:35:33 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received postMessage request (name = Owais)
+Apr 14, 2024 4:35:33 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received message "Hello again from Owais" (chatroom _default)
+Apr 14, 2024 4:36:13 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received postMessage request (name = Owais)
+Apr 14, 2024 4:36:13 PM edu.stevens.cs522.chat.webservice.ChatActivity addMessage
+INFO: Dynamically adding chatroom (We are not syncing chatrooms with the server
+Apr 14, 2024 4:36:13 PM edu.stevens.cs522.chat.webservice.ChatResource postMessage
+INFO: Received message "Hello in chatroom1" (chatroom Chatroom1)
+Apr 14, 2024 4:37:23 PM edu.stevens.cs522.chat.webservice.ChatResource log
+INFO: DEBUG: Received logs request
+Apr 14, 2024 4:37:32 PM edu.stevens.cs522.chat.webservice.ChatResource messages
+INFO: DEBUG: Received messages request
+Apr 14, 2024 4:37:32 PM edu.stevens.cs522.chat.webservice.ChatResource$2 write
+INFO: DEBUG: Listed all messages.
