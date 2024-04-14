@@ -136,7 +136,7 @@ public class RegisterService extends Service {
         cancelIntent.setAction(ACTION_CANCEL);
 
         PendingIntent pendingCancelIntent = PendingIntent.getService(this, 0, cancelIntent, PendingIntent.FLAG_IMMUTABLE);
-        Notification.Action cancelAction = new Notification.Action.Builder(icon, "CANCEL", pendingCancelIntent).build();
+        Notification.Action cancelAction = new Notification.Action.Builder(icon, getText(R.string.register_cancel_button_label), pendingCancelIntent).build();
         notificationBuilder.addAction(cancelAction);
 
 
@@ -208,12 +208,12 @@ public class RegisterService extends Service {
                     if (registerResponse != null && !(registerResponse instanceof ErrorResponse)) {
 
                         // DO NOT DISPLAY A TOAST (It's unsafe.  Why?)
-                        notificationBuilder.setContentText("SUCCESS: request successfully processed");
+                        notificationBuilder.setContentText(getText(R.string.registered_notification_message)).setTicker(getText(R.string.registered_ticker_text));
 
 
                     } else {
                         // DO NOT DISPLAY A TOAST (It's unsafe.  Why?)
-                        notificationBuilder.setContentText("FAILURE: request can not be processed");
+                        notificationBuilder.setContentText(getText(R.string.register_failed_notification_message)).setTicker(getText(R.string.register_failed_ticker_text));
 
 
                     }
